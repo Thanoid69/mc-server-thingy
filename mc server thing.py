@@ -7,9 +7,7 @@ ip = input("IP and PORT (example; 111.1.111.111:25565): ")
 server = JavaServer.lookup(ip)
 
 status = server.status()
-
 latency =  server.ping()
-
 query = server.query()
 
 print(f"""\n{status.players.online} Players online. {status.latency} ms
