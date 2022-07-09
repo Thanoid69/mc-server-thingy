@@ -1,7 +1,8 @@
 import mcstatus
 from mcstatus import JavaServer
+import sys
 
-ip = input("IP and PORT (example: 111.1.111.111:25565): ")
+ip = input("IP and PORT (example; 111.1.111.111:25565): ")
 
 
 server = JavaServer.lookup(ip)
@@ -12,12 +13,14 @@ latency =  server.ping()
 
 query = server.query()
 
-print(f"{status.players.online} Players online. {status.latency} ms")
-print(f"The server has the following players online: {', '.join(query.players.names)}")
-print(f"Version: {'' .join(query.software.version)}")
-print(f"Version: {'' .join(query.software.brand)}")
-print(f"Plugins: {', ' .join(query.software.plugins)}")
-print(f"Motd: {'' .join(query.motd)}")
-print(f"Map: {'' .join(query.map)}")
+print(f"""\n{status.players.online} Players online. {status.latency} ms
+The server has the following players online: {', '.join(query.players.names)}
+Version: {'' .join(query.software.version)}
+Version: {'' .join(query.software.brand)}
+Plugins: {', ' .join(query.software.plugins)}
+Motd: {'' .join(query.motd)}
+Map: {'' .join(query.map)}
+""")
+
 
 input()
