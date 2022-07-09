@@ -28,7 +28,7 @@ def Query():
     Version: {'' .join(query.software.version)}
     Version: {'' .join(query.software.brand)}
     Plugins: [{', ' .join(query.software.plugins)}]
-    Motd: "{'' .join(query.motd)}"
+    Motd: {'' .join(query.motd)}"
     Map: {'' .join(query.map)}
         """)
     except Exception:
