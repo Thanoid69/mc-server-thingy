@@ -3,7 +3,7 @@ from mcstatus import JavaServer
 
 
 
-print("This tool is for version 1.7 and up.")
+print("! This tool is for version 1.7 and up !")
 
 ip = input("IP and PORT (example: 111.1.111.111:25565): ")
 
