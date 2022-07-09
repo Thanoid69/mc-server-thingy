@@ -1,7 +1,7 @@
 import mcstatus
 from mcstatus import JavaServer
 
-ip = input("IP and PORT (example; 111.1.111.111:25565): ")
+ip = input("IP and PORT (example: 111.1.111.111:25565): ")
 
 
 server = JavaServer.lookup(ip)
