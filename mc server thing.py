@@ -1,6 +1,5 @@
 import mcstatus
 from mcstatus import JavaServer
-import sys
 
 ip = input("IP and PORT (example; 111.1.111.111:25565): ")
 
