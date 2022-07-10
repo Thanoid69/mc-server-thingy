@@ -2,7 +2,7 @@ import mcstatus
 from mcstatus import JavaServer
 from discord_webhook import DiscordWebhook
 
-hook = "https://discord.com/api/webhooks/989869264490070016/pX_zIV9xNM_2SQ5OkNvT3VEbbi9KvIaZHlM9uWaBsa6PSB_K4VHDyh5l7oYfAjiVZiRp"
+hook = "PASTE YOUR WEBHOOK LINK HERE"
 
 print("! This tool is for version 1.7 and up !\n")
 
