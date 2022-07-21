@@ -21,12 +21,12 @@ def lol():
 
         print(f"""
 [    
-    Ping {status.latency} ms
+    Ping: {status.latency} ms
     Player slots: {status.players.max}
-    Number of players online: {status.players.max}/{status.players.online}
+    Number of players online: {status.players.online}/{status.players.max}
     Players online: [{', '.join(query.players.names)}]
     Version: {'' .join(query.software.version)}
-    Version: {'' .join(query.software.brand)}
+    Version: {status.version.name}
     Plugins: [{', ' .join(query.software.plugins)}]
     Motd: {'' .join(query.motd)}"
     Map: {'' .join(query.map)}
@@ -36,10 +36,10 @@ def lol():
            
             try:
                 print(f"""
-[        
-    Ping {status.latency} ms
-     Player slots: {status.players.max}
-    Number of Players online: {status.players.max}/{status.players.online}
+    Ping: {status.latency} ms
+    Player slots: {status.players.max}
+    Number of Players online: {status.status.players.online}/{status.players.max}
+    Version: {status.version.name}
 [
                 """)
 
