@@ -45,7 +45,7 @@ def lol():
             except Exception:
                 print('Error, not a Minecraft server')
             
-            print('Less info because the server has enable-query=false')
+            print('Query is disabled.')
 
 lol()
 
