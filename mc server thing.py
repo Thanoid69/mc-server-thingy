@@ -25,7 +25,6 @@ def lol():
     Player slots: {status.players.max}
     Number of players online: {status.players.online}/{status.players.max}
     Players online: [{', '.join(query.players.names)}]
-    Version: {'' .join(query.software.version)}
     Version: {status.version.name}
     Plugins: [{', ' .join(query.software.plugins)}]
     Motd: {'' .join(query.motd)}"
