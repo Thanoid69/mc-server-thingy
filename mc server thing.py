@@ -24,11 +24,11 @@ def lol():
     Ping: {status.latency} ms
     Player slots: {status.players.max}
     Number of players online: {status.players.online}/{status.players.max}
-    Players online: [{', '.join(query.players.names)}]
+    Players online: [{query.players.names}]
     Version: {status.version.name}
-    Plugins: [{', ' .join(query.software.plugins)}]
-    Motd: {'' .join(query.motd)}"
-    Map: {'' .join(query.map)}
+    Plugins: [{query.software.plugins}]
+    Motd: {query.motd}
+    Map: {query.map}
 [
         """)
     except Exception:
