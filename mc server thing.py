@@ -1,7 +1,7 @@
 import mcstatus
 from mcstatus import JavaServer
 import colorama 
-from colorama import Fore, Back, Style
+from colorama import Fore
 import os
 os.system('mode con: cols=130 lines=30')
 
