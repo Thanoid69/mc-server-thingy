@@ -1,1 +1,2 @@
-i dont know if it works lol
+Packages required:
+mcstatus, colorama.
