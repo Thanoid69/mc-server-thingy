@@ -26,7 +26,7 @@ def lol():
     Number of players online: {status.players.online}/{status.players.max}
     Players online: [{query.players.names}]
     Version: {status.version.name}
-    Plugins: [{query.software.plugins}]
+    Plugins: [{', ' .join(query.software.plugins)}]
     Motd: {query.motd}
     Map: {query.map}
 [
