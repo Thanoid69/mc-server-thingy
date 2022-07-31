@@ -68,7 +68,7 @@ def lol():
                 """)
 
             except Exception:
-                print('Error, not a Minecraft server')
+                print('Error, not a Minecraft server.')
             
             print('Query is disabled.')
 
