@@ -49,7 +49,7 @@ def lol():
     Ping: {status.latency} ms
     Player slots: {status.players.max}
     Number of players online: {status.players.online}/{status.players.max}
-    Players online: [{query.players.names}]
+    Players online: [{', ' .join(query.players.names)}]
     Version: {status.version.name}
     Plugins: [{', ' .join(query.software.plugins)}]
     Motd: {query.motd}
